@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ----------------------------------------------------
     const typedRoleEl = document.getElementById('typed-role');
     if (typedRoleEl) {
-        const roleText = 'Sr. iOS Developer';
+        const roleText = 'Senior Software Engineer - iOS/Flutter';
         let i = 0;
         const typeSpeed = 90;
         const pauseBeforeStart = 600;
