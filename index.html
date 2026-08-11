@@ -4,395 +4,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Jaydip Savaliya - Senior Software Engineer - iOS/Flutter</title>
+    <meta name="theme-color" content="#0e1117">
+    <title>Jaydip Savaliya - Senior iOS & Flutter Engineer</title>
     <meta name="description"
-        content="Portfolio of Jaydip Savaliya, a Senior Software Engineer with over 8+ years of experience building high-quality iOS and Flutter applications.">
-    <link rel="stylesheet" href="style.css">
+        content="Portfolio of Jaydip Savaliya, a senior software engineer building polished iOS, SwiftUI, UIKit, and Flutter applications.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header class="site-header">
+        <a class="brand" href="#home" aria-label="Jaydip Savaliya home">
+            <span class="brand-mark">JS</span>
+            <span>Jaydip Savaliya</span>
+        </a>
 
-    <nav class="fixed-nav">
-        <a href="#hero" class="logo"><span class="logo-bracket">&lt;</span>JS<span class="logo-bracket">/&gt;</span></a>
-        <div class="nav-links">
-            <a href="#imote">Projects</a>
-            <a href="#about">Experience</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+            <a href="#work">Work</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <div class="scroll-container">
-        <!-- Hero Section -->
-        <section id="hero" class="section theme-light hero-section" data-theme="light">
-            <div class="hero-code-bg" aria-hidden="true"></div>
-            <div class="content-wrapper centered">
-                <div class="profile-circle">
-                    <img src="images/user.png" alt="Jaydip Savaliya" class="profile-img">
-                </div>
-                <h1 class="hero-name">Jaydip Savaliya</h1>
-                <p class="hero-role"><span class="bracket">{</span> <span id="typed-role" class="role-text"></span><span
-                        class="cursor-blink">|</span> <span class="bracket">}</span></p>
-                <div class="hero-code-snippet">
-                    <pre
-                        class="code-block"><code><span class="code-keyword">let</span> <span class="code-var">experience</span> = <span class="code-num">8</span><span class="code-type">+</span>
-<span class="code-keyword">var</span> <span class="code-var">stack</span> = [<span class="code-string">"Swift"</span>, <span class="code-string">"SwiftUI"</span>, <span class="code-string">"UIKit"</span>, <span class="code-string">"Flutter"</span>]</code></pre>
-                </div>
-                <p class="hero-sub">Ship quality apps • Clean architecture • Team lead</p>
-                <a href="CV/Jaydip CV.pdf" class="btn primary" download>Download Resume</a>
-                <div class="scroll-indicator">
-                    <span>Scroll to explore</span>
-                    <div class="arrow">↓</div>
-                </div>
-            </div>
-        </section>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-copy reveal">
+                <p class="eyebrow">Portfolio</p>
+                <h1><span>Jaydip</span><span>Savaliya</span></h1>
+                <p class="hero-role">Senior Software Engineer – iOS & Flutter</p>
+                <p class="hero-text">
+                    I lead iOS teams, ship production apps, and turn product ideas into clean, scalable mobile experiences — powered by Swift, SwiftUI, UIKit, and Flutter. With 8+ years of hands-on experience, I leverage AI in my development workflow to write smarter code, debug faster, and deliver higher-quality apps in less time.
+                </p>
 
-        <!-- Project 1: iMote -->
-        <section id="imote" class="section theme-dark" data-theme="dark">
-            <div class="section-bg-glow"></div>
-            <div class="content-wrapper split-layout">
-                <div class="text-content">
-                    <h3>iMote</h3>
-                    <p class="project-tags">iOS • Swift • IoT</p>
-                    <p class="description">
-                        Developed a feature-packed universal TV remote control app compatible with all major TV brands, transforming smartphones into powerful IoT-enabled remote controllers. The app ranked among the <strong>Top 50</strong> in its App Store category, serving a large user base with a focus on performance, reliability, and user experience.
-                    </p>
-                    <div class="actions">
-                        <a href="https://apps.apple.com/us/app/universal-tv-remote-control/id6477382010" target="_blank" class="btn primary">View on App Store</a>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#work">View Projects</a>
+                    <a class="btn btn-secondary" href="CV/Jaydip CV.pdf" download>Download Resume</a>
+                </div>
+
+                <div class="metrics" aria-label="Career highlights">
+                    <div>
+                        <strong>8+</strong>
+                        <span>Years</span>
+                    </div>
+                    <div>
+                        <strong>Top 50</strong>
+                        <span>App Store rank</span>
+                    </div>
+                    <div>
+                        <strong>Lead</strong>
+                        <span>Client and team delivery</span>
                     </div>
                 </div>
-                <div class="visual-content">
-                    <div class="screens-row screens-row-phone">
-                        <div class="phone-mockup screen-1">
-                            <div class="screen">
-                                <img src="images/imote1.webp" alt="iMote App Screenshot 1">
-                            </div>
-                        </div>
-                        <div class="phone-mockup screen-2">
-                            <div class="screen">
-                                <img src="images/imote2.webp" alt="iMote App Screenshot 2">
-                            </div>
-                        </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="profile-card">
+                    <div class="portrait-wrap">
+                        <img src="images/user.png" alt="Jaydip Savaliya" class="portrait">
+                    </div>
+                    <div class="profile-info">
+                        <span class="status-pill"><span class="status-dot"></span>Available</span>
+                        <h2>Mobile app specialist with product ownership mindset.</h2>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Project 2: AI Daily Planner -->
-        <section id="ai-planner" class="section theme-light" data-theme="light">
-            <div class="content-wrapper split-layout reverse">
-                <div class="visual-content">
-                    <div class="screens-row screens-row-phone">
-                        <div class="phone-mockup screen-1">
-                            <div class="screen">
-                                <img src="images/AIDailyPlanner1.webp" alt="AI Daily Planner Screenshot 1">
-                            </div>
-                        </div>
-                        <div class="phone-mockup screen-2">
-                            <div class="screen">
-                                <img src="images/AIDailyPlanner2.webp" alt="AI Daily Planner Screenshot 2">
-                            </div>
-                        </div>
+        <section class="trusted-strip" aria-label="Technology focus">
+            <span>Swift</span>
+            <span>SwiftUI</span>
+            <span>UIKit</span>
+            <span>Flutter</span>
+            <span>Firebase</span>
+            <span>RevenueCat</span>
+        </section>
+
+        <section id="work" class="section">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Selected Work</p>
+                <h2>Apps with real users, revenue flows, and production constraints.</h2>
+            </div>
+
+            <div class="project-list">
+                <article class="project feature-project reveal">
+                    <div class="project-copy">
+                        <span class="project-index">01</span>
+                        <h3>iMote</h3>
+                        <p class="project-meta">iOS - Swift - IoT - Universal Remote</p>
+                        <p>
+                            Feature-packed universal TV remote control app compatible with all major TV brands, transforming smartphones into powerful IoT-enabled remote controllers. The app ranked among the Top 50 in its App Store category, serving a large user base with a focus on performance, reliability, and user experience..
+                        </p>
+                        <a class="app-link" href="https://apps.apple.com/us/app/universal-tv-remote-control/id6477382010"
+                            target="_blank" rel="noopener noreferrer">View on App Store</a>
                     </div>
+                    <div class="device-pair">
+                        <div class="phone-frame"><img src="images/imote1.webp" alt="iMote home screen"></div>
+                        <div class="phone-frame phone-offset"><img src="images/imote2.webp" alt="iMote remote screen"></div>
+                    </div>
+                </article>
+
+                <article class="project reveal">
+                    <div class="project-copy">
+                        <span class="project-index">02</span>
+                        <h3>AI Daily Planner</h3>
+                        <p class="project-meta">iOS - SwiftUI - Productivity</p>
+                        <p>Unifies tasks, routines, reminders, events, and notes into a focused daily planning flow.</p>
+                        <a class="app-link" href="https://apps.apple.com/us/app/ai-daily-plannerr/id6755669835"
+                            target="_blank" rel="noopener noreferrer">View on App Store</a>
+                    </div>
+                    <div class="device-pair compact">
+                        <div class="phone-frame"><img src="images/AIDailyPlanner1.webp" alt="AI Daily Planner task screen"></div>
+                        <div class="phone-frame phone-offset"><img src="images/AIDailyPlanner2.webp" alt="AI Daily Planner calendar screen"></div>
+                    </div>
+                </article>
+
+                <article class="project reveal">
+                    <div class="project-copy">
+                        <span class="project-index">03</span>
+                        <h3>AI PDF Scan Pro</h3>
+                        <p class="project-meta">iOS - SwiftUI - Documents</p>
+                        <p>Mobile scanner for capturing, editing, organizing, and exporting professional document scans.</p>
+                        <a class="app-link" href="https://apps.apple.com/us/app/ai-pdf-scan-pro-document-maker/id6756697562"
+                            target="_blank" rel="noopener noreferrer">View on App Store</a>
+                    </div>
+                    <div class="device-pair compact">
+                        <div class="phone-frame"><img src="images/aipfdscan1.webp" alt="AI PDF Scan Pro scan screen"></div>
+                        <div class="phone-frame phone-offset"><img src="images/aipdfscan2.webp" alt="AI PDF Scan Pro document screen"></div>
+                    </div>
+                </article>
+
+                <article class="project reveal">
+                    <div class="project-copy">
+                        <span class="project-index">04</span>
+                        <h3>Goya</h3>
+                        <p class="project-meta">iOS - Swift - AI Image Generation</p>
+                        <p>AI creative app for generating images, logos, tattoos, and visual concepts from prompts.</p>
+                        <a class="app-link" href="https://apps.apple.com/us/app/goya-image-generator-ai-art/id6502385740"
+                            target="_blank" rel="noopener noreferrer">View on App Store</a>
+                    </div>
+                    <div class="device-pair compact">
+                        <div class="phone-frame"><img src="images/goya1.jpg" alt="Goya generation screen"></div>
+                        <div class="phone-frame phone-offset"><img src="images/goya2.jpg" alt="Goya gallery screen"></div>
+                    </div>
+                </article>
+
+                <article class="project reveal">
+                    <div class="project-copy">
+                        <span class="project-index">05</span>
+                        <h3>SpamSafe</h3>
+                        <p class="project-meta">iOS - Swift - Security</p>
+                        <p>Spam call blocker with caller ID, call filtering, and customizable blocklists.</p>
+                        <a class="app-link" href="https://apps.apple.com/us/app/spamsafe-spam-call-blocker/id6483862036"
+                            target="_blank" rel="noopener noreferrer">View on App Store</a>
+                    </div>
+                    <div class="device-pair compact">
+                        <div class="phone-frame"><img src="images/SPAMSAFE1.webp" alt="SpamSafe dashboard screen"></div>
+                        <div class="phone-frame phone-offset"><img src="images/SPAMSAFE2.webp" alt="SpamSafe blocker screen"></div>
+                    </div>
+                </article>
+
+                <article class="project ipad-project reveal">
+                    <div class="project-copy">
+                        <span class="project-index">06</span>
+                        <h3>MoverBOL</h3>
+                        <p class="project-meta">iPad - Swift - Logistics</p>
+                        <p>Paperless Bill of Lading workflows with real-time updates and integrated payment support.</p>
+                        <a class="app-link" href="https://apps.apple.com/in/app/mover-bol/id1481031241" target="_blank"
+                            rel="noopener noreferrer">View on App Store</a>
+                    </div>
+                    <div class="ipad-pair">
+                        <div class="ipad-frame"><img src="images/moverbol1.webp" alt="MoverBOL iPad workflow"></div>
+                        <div class="ipad-frame ipad-offset"><img src="images/moverbol2.webp" alt="MoverBOL iPad form"></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="experience" class="section split-section">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Experience</p>
+                <h2>Comfortable owning the whole path from architecture to release.</h2>
+            </div>
+
+            <div class="timeline reveal">
+                <article>
+                    <span>03/2024 - Present</span>
+                    <h3>Sr. iOS Developer - Brainvire Infotech</h3>
+                    <p>Leading development, client communication, delivery planning, and end-to-end implementation.</p>
+                </article>
+                <article>
+                    <span>05/2021 - 03/2024</span>
+                    <h3>Sr. iOS Developer - Upsquare Solutions</h3>
+                    <p>Built scalable apps, reviewed code, mentored engineers, and improved delivery quality.</p>
+                </article>
+                <article>
+                    <span>09/2017 - 04/2021</span>
+                    <h3>iOS Developer - Openxcell Technolabs</h3>
+                    <p>Developed feature-rich applications across multiple business domains and app categories.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills-section">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Stack</p>
+                <h2>Technical range for modern mobile product teams.</h2>
+            </div>
+
+            <div class="skill-groups reveal">
+                <div>
+                    <h3>Mobile</h3>
+                    <p>iOS, Android, Swift, SwiftUI, UIKit, Objective-C, Flutter, WatchKit, Combine, StoreKit</p>
                 </div>
-                <div class="text-content">
-                    <h3>AI Daily Planner</h3>
-                    <p class="project-tags">iOS • SwiftUI • Productivity</p>
-                    <p class="description">
-                        Brings together tasks, events, reminders, routines, and notes in one structured place.
-                        Helps you stay organized and focused throughout the day.
-                    </p>
-                    <div class="actions">
-                        <a href="https://apps.apple.com/us/app/ai-daily-plannerr/id6755669835" target="_blank" class="btn primary">View on App Store</a>
-                    </div>
+                <div>
+                    <h3>Architecture & Data</h3>
+                    <p>MVVM-C, MVVM, MVC, Core Data, SQLite, REST, GraphQL</p>
+                </div>
+                <div>
+                    <h3>Cloud & Integrations</h3>
+                    <p>Firebase, AWS, iCloud, Alamofire, RevenueCat, Superwall, AppsFlyer, Google Ads</p>
+                </div>
+                <div>
+                    <h3>Development & Delivery</h3>
+                    <p>AI-Assisted Development, Xcode, Android Studio, GitHub, GitLab, Postman, Jenkins, CircleCI, Jira, Azure, Figma</p>
                 </div>
             </div>
         </section>
 
-        <!-- Project 3: AI PDF Scan Pro -->
-        <section id="ai-pdf-scan" class="section theme-dark" data-theme="dark">
-            <div class="section-bg-glow"
-                style="background: radial-gradient(circle, rgba(0,122,255,0.15) 0%, rgba(0,0,0,0) 70%);"></div>
-            <div class="content-wrapper split-layout">
-                <div class="text-content">
-                    <h3>AI PDF Scan Pro</h3>
-                    <p class="project-tags">iOS • SwiftUI • Productivity</p>
-                    <p class="description">
-                        A powerful mobile scanner app designed to make document scanning, editing, and management simple, fast, and high-quality. Scan documents, receipts, notes, invoices, or business cards — professional scanning and productivity tools in one compact, reliable app.
-                    </p>
-                    <div class="actions">
-                        <a href="https://apps.apple.com/us/app/ai-pdf-scan-pro-document-maker/id6756697562" target="_blank" class="btn primary">View on App Store</a>
-                    </div>
+        <section id="contact" class="contact-section">
+            <div class="contact-panel reveal">
+                <p class="eyebrow">Contact</p>
+                <h2>Let us build something sharp.</h2>
+                <p>Open for senior mobile engineering roles, consulting, and product collaborations.</p>
+                <div class="contact-details">
+                    <a href="mailto:jvsios2016@gmail.com">
+                        <span>Email</span>
+                        jvsios2016@gmail.com
+                    </a>
+                    <a href="tel:+918469496658">
+                        <span>Mobile</span>
+                        +91 84694 96658
+                    </a>
+                    <a href="https://linkedin.com/in/jaydipsavaliya27" target="_blank" rel="noopener noreferrer">
+                        <span>LinkedIn</span>
+                        linkedin.com/in/jaydipsavaliya27
+                    </a>
                 </div>
-                <div class="visual-content">
-                    <div class="screens-row screens-row-phone">
-                        <div class="phone-mockup screen-1">
-                            <div class="screen">
-                                <img src="images/aipfdscan1.webp" alt="AI PDF Scan Pro Screenshot 1">
-                            </div>
-                        </div>
-                        <div class="phone-mockup screen-2">
-                            <div class="screen">
-                                <img src="images/aipdfscan2.webp" alt="AI PDF Scan Pro Screenshot 2">
-                            </div>
-                        </div>
-                    </div>
+                <div class="contact-actions">
+                    <a class="btn btn-primary" href="mailto:jvsios2016@gmail.com">Email Me</a>
+                    <a class="btn btn-whatsapp" href="tel:+918469496658">Call / WhatsApp</a>
+                    <a class="btn btn-linkedin" href="https://linkedin.com/in/jaydipsavaliya27" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a>
                 </div>
             </div>
         </section>
+    </main>
 
-        <!-- Project 4: Goya -->
-        <section id="goya" class="section theme-light" data-theme="light">
-            <div class="section-bg-glow"
-                style="background: radial-gradient(circle, rgba(120,40,200,0.3) 0%, rgba(0,0,0,0) 70%);"></div>
-            <div class="content-wrapper split-layout">
-                <div class="text-content">
-                    <h3>Goya</h3>
-                    <p class="project-tags">iOS • Swift • AI • Image Gen</p>
-                    <p class="description">
-                        Delivers mind-blowing images, logos, tattoos, and more using advanced AI image generation
-                        technology.
-                        Takes creativity to the next level.
-                    </p>
-                    <div class="actions">
-                        <a href="https://apps.apple.com/us/app/goya-image-generator-ai-art/id6502385740" target="_blank" class="btn primary">View on App Store</a>
-                    </div>
-                </div>
-                <div class="visual-content">
-                    <div class="screens-row screens-row-phone">
-                        <div class="phone-mockup screen-1">
-                            <div class="screen">
-                                <img src="images/goya1.jpg" alt="Goya App Screenshot 1">
-                            </div>
-                        </div>
-                        <div class="phone-mockup screen-2">
-                            <div class="screen">
-                                <img src="images/goya2.jpg" alt="Goya App Screenshot 2">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Project 4: SpamSafe -->
-        <section id="spamsafe" class="section theme-dark" data-theme="dark">
-            <div class="content-wrapper split-layout reverse">
-                <div class="visual-content reveal">
-                    <div class="screens-row screens-row-phone">
-                        <div class="phone-mockup screen-1">
-                            <div class="screen">
-                                <img src="images/SPAMSAFE1.webp" alt="SpamSafe App Screenshot 1">
-                            </div>
-                        </div>
-                        <div class="phone-mockup screen-2">
-                            <div class="screen">
-                                <img src="images/SPAMSAFE2.webp" alt="SpamSafe App Screenshot 2">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-content reveal-delay">
-                    <h3>SpamSafe</h3>
-                    <p class="project-tags">iOS • Swift • Security</p>
-                    <p class="description">
-                        Ultimate spam call blocker with caller ID, call filter, and customizable backlists.
-                        Enjoy safer and more peaceful communication.
-                    </p>
-                    <div class="actions">
-                        <a href="https://apps.apple.com/us/app/spamsafe-spam-call-blocker/id6483862036" target="_blank" class="btn primary">View on App Store</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Project 5: MoverBOL (iPad) -->
-        <section id="moverbol" class="section theme-light" data-theme="light">
-            <div class="section-bg-glow"
-                style="background: radial-gradient(circle, rgba(255, 165, 0, 0.15), transparent 70%);"></div>
-            <div class="content-wrapper split-layout">
-                <div class="text-content reveal">
-                    <div class="project-badge ipad-badge">Built for iPad</div>
-                    <h3>MoverBOL</h3>
-                    <p class="project-tags">iPad • Swift • Logistics</p>
-                    <p class="description">
-                        Streamlines moving operations with paperless Bill of Lading management, real-time updates, and
-                        integrated payments.
-                        Boosts efficiency for drivers and crew.
-                    </p>
-                    <div class="actions">
-                        <a href="https://apps.apple.com/in/app/mover-bol/id1481031241" target="_blank" class="btn primary">View on App Store</a>
-                    </div>
-                </div>
-                <div class="visual-content reveal-delay">
-                    <div class="screens-row screens-row-ipad">
-                        <div class="ipad-mockup screen-1">
-                            <div class="screen">
-                                <img src="images/moverbol1.webp" alt="MoverBOL iPad Screenshot 1">
-                            </div>
-                        </div>
-                        <div class="ipad-mockup screen-2">
-                            <div class="screen">
-                                <img src="images/moverbol2.webp" alt="MoverBOL iPad Screenshot 2">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- More Projects List -->
-        <section id="more-projects" class="section theme-dark" data-theme="dark">
-            <div class="content-wrapper centered vertical reveal">
-                <h3 class="section-title"><span class="title-accent">//</span> Other Notable Projects</h3>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <h4>Big And Strong</h4>
-                        <p>Health • Fitness Tracking</p>
-                    </div>
-                    <div class="project-card">
-                        <h4>Sports Fan Trivia</h4>
-                        <p>Gaming • Social Trivia</p>
-                    </div>
-                    <div class="project-card">
-                        <h4>360 Reference</h4>
-                        <p>Utility • Information Management</p>
-                    </div>
-                    <div class="project-card">
-                        <h4>Mover Inventory</h4>
-                        <p>Logistics • Inventory Control</p>
-                    </div>
-                    <div class="project-card">
-                        <h4>MyBestLife</h4>
-                        <p>Lifestyle • Habit Tracker</p>
-                    </div>
-                    <div class="project-card">
-                        <h4>Scouval</h4>
-                        <p>Navigation • Delivery Tracking</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience & Skills -->
-        <section id="about" class="section theme-light" data-theme="light">
-            <div class="content-wrapper split-layout">
-                <div class="text-content wide">
-                    <h3 class="section-title"><span class="title-accent">//</span> Experience</h3>
-                    <ul class="experience-list">
-                        <li>
-                            <span class="date">03/2024 – Present</span>
-                            <strong>Sr. iOS Developer</strong> at Brainvire Infotech
-                            <p>Leading teams, managing client comms, end-to-end development.</p>
-                        </li>
-                        <li>
-                            <span class="date">05/2021 – 03/2024</span>
-                            <strong>Sr. iOS Developer</strong> at Upsquare Solutions
-                            <p>Delivered scalable apps, code reviews, mentoring.</p>
-                        </li>
-                        <li>
-                            <span class="date">09/2017 – 04/2021</span>
-                            <strong>iOS Developer</strong> at Openxcell Technolabs
-                            <p>Designed and developed feature-rich applications.</p>
-                        </li>
-                    </ul>
-                    <div class="award-block"
-                        style="margin-top: 2rem; background: #fff; padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
-                        <strong style="color: #FF9500;">🏆 Spot Award @ Brainvire</strong>
-                        <p style="font-size: 0.95rem; margin-top: 0.5rem;">"Successfully delivered the iMote project on
-                            time with exceptional technical expertise."</p>
-                    </div>
-                </div>
-                <div class="text-content wide">
-
-                    <h3 class="section-title"><span class="title-accent">//</span> Technical Skills</h3>
-                    <div class="skills-container">
-                        <!-- Languages -->
-                        <span class="skill-tag skill-keyword">Swift</span>
-                        <span class="skill-tag skill-keyword">Objective-C</span>
-                        <span class="skill-tag skill-keyword">Flutter</span>
-
-                        <!-- UI & Architecture -->
-                        <span class="skill-tag skill-type">SwiftUI</span>
-                        <span class="skill-tag skill-type">UIKit</span>
-                        <span class="skill-tag skill-arch">MVVM-C</span>
-                        <span class="skill-tag skill-arch">MVVM/MVC</span>
-
-                        <!-- Core Frameworks -->
-                        <span class="skill-tag skill-api">CoreLocation</span>
-                        <span class="skill-tag skill-api">MapKit</span>
-                        <span class="skill-tag skill-api">AVFoundation</span>
-                        <span class="skill-tag skill-api">WatchKit</span>
-                        <span class="skill-tag skill-api">StoreKit</span>
-                        <span class="skill-tag skill-api">PushKit</span>
-                        <span class="skill-tag skill-api">Photos</span>
-
-                        <!-- Backend & Storage -->
-                        <span class="skill-tag skill-arch">Firebase</span>
-                        <span class="skill-tag skill-arch">Core Data</span>
-                        <span class="skill-tag skill-arch">SQLite</span>
-                        <span class="skill-tag skill-arch">AWS</span>
-                        <span class="skill-tag skill-arch">iCloud</span>
-
-                        <!-- Networking & APIs -->
-                        <span class="skill-tag skill-api">RESTful APIs</span>
-                        <span class="skill-tag skill-api">Alamofire</span>
-                        <span class="skill-tag skill-api">GraphQL</span>
-                        <span class="skill-tag skill-api">Combine</span>
-
-                        <!-- Monetization & Marketing -->
-                        <span class="skill-tag skill-type">RevenueCat</span>
-                        <span class="skill-tag skill-type">Superwall</span>
-                        <span class="skill-tag skill-type">AppsFlyer</span>
-                        <span class="skill-tag skill-type">Google Ads</span>
-
-                        <!-- Tools & Workflow -->
-                        <span class="skill-tag skill-tool">Xcode</span>
-                        <span class="skill-tag skill-tool">Git & GitHub</span>
-                        <span class="skill-tag skill-tool">GitLab</span>
-                        <span class="skill-tag skill-tool">Postman</span>
-                        <span class="skill-tag skill-tool">Jenkins</span>
-                        <span class="skill-tag skill-tool">CircleCI</span>
-                        <span class="skill-tag skill-tool">Jira / Azure</span>
-                        <span class="skill-tag skill-tool">Figma</span>
-
-                        <!-- Payments -->
-                        <span class="skill-tag skill-keyword">Stripe</span>
-                        <span class="skill-tag skill-keyword">PayPal</span>
-                        <span class="skill-tag skill-keyword">Razorpay</span>
-                    </div>
-                    <div class="education-block">
-                        <h3 class="section-title"><span class="title-accent">//</span> Education</h3>
-                        <p><strong>MCA</strong> - Jaipur National University (2018)</p>
-                        <p><strong>BCA</strong> - Saurashtra University (2016)</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact" class="section theme-dark" data-theme="dark">
-            <div class="content-wrapper centered">
-                <h3 class="section-title"><span class="title-accent">//</span> Let's Work Together</h3>
-                <p>Open for opportunities and collaborations.</p>
-                <div class="contact-links">
-                    <a href="mailto:jvsios2016@gmail.com" class="contact-btn">jvsios2016@gmail.com</a>
-                    <a href="tel:+918469496658" class="contact-btn">+91 84694 96658</a>
-                    <a href="https://linkedin.com/in/jaydipsavaliya27" target="_blank" class="contact-btn">LinkedIn</a>
-                </div>
-                <footer>
-                    <p>&copy; 2026 Jaydip Savaliya. <span class="footer-tagline">Built with Swift &amp; attention to
-                            detail.</span></p>
-                </footer>
-            </div>
-        </section>
-    </div>
+    <footer class="site-footer">
+        <span>Jaydip Savaliya</span>
+        <span>Senior iOS and Flutter Engineer</span>
+    </footer>
 
     <script src="script.js"></script>
 </body>
